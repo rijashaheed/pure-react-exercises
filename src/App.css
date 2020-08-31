@@ -1,0 +1,46 @@
+.box {
+    justify-content: center;
+    padding: 105px;
+
+}
+
+.envelope {
+    height: 65vh;
+    display: grid;
+    border: 1px solid;
+}
+
+.toPerson {
+    grid-column: 1/6;
+    padding: .625em;
+    grid-row: 1/-1;
+}
+
+.fromPerson {
+    margin-left: 90px;
+    margin-bottom: 5.625em; /*100px*/
+    grid-row: 2/2;
+    grid-column: 4/5;
+    padding: 10px;
+    justify-content: center;
+}
+
+.stamp__box {
+    height: 120px;
+    width: 85px;
+    grid-column: 7/7;
+    grid-row: 1/1;
+    border: 1px solid;
+    margin-right: -12.5em; /*-200px*/
+    margin-top: .625em;
+    display: flex;
+}
+
+.stamp {
+    text-transform: uppercase;
+    transform: rotate(-35deg);
+    color: #9a9da1;
+    font-weight: 900;
+    font-size: 1.5em;
+    align-self: center;
+}
