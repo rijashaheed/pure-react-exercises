@@ -6,6 +6,7 @@ import Poster from "./PropTypesExercise4";
 import Email from "./PropTypesExercise5";
 import ErrorBox from "./ChildrenExercise1";
 import Dialog from "./ChildrenExercise3";
+import FileList from "./GithubFileListExample_Exercise1";
 
 // import ErrorBox from './ChildrenExercise1';
 // import Children from "./ChildrenExercise2";
@@ -13,6 +14,7 @@ import Dialog from "./ChildrenExercise3";
 import img from "../src/logo.svg";
 import ChildrenArray from "./ChildrenExercise2";
 
+//GitHub example
 function App() {
   const testPerson = {
     name: "James Smith",
@@ -70,6 +72,36 @@ function App() {
       "-July 15th 2016 Read this issue on the web https://reactnewsletterjs.com/issue/36?sid=3QGDYBX###Comme",
   };
 
+  const testFiles = [
+    {
+      id: 1,
+      name: "src",
+      type: "folder",
+      updates_at: "2020-07-11 21:24:00",
+      latestCommit: {
+        message: "Initial commit",
+      },
+    },
+    {
+      id: 2,
+      name: "tests",
+      type: "folder",
+      updates_at: "2020-07-11 21:24:00",
+      latestCommit: {
+        message: "Initial commit",
+      },
+    },
+    {
+      id: 3,
+      name: "README",
+      type: "file",
+      updates_at: "2020-07-11 21:24:00",
+      latestCommit: {
+        message: "Add a readme",
+      },
+    },
+  ];
+
   return (
     <div className="App">
       <AddressLabel person={testPerson} />
@@ -96,6 +128,8 @@ function App() {
         <p>Here is some important text or error or something</p>
         <button className="dialogButton">Close</button>
       </Dialog>
+      <FileList files={testFiles}></FileList>
+      
     </div>
   );
 }
