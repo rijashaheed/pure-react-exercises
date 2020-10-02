@@ -7,6 +7,7 @@ import Email from "./PropTypesExercise5";
 import ErrorBox from "./ChildrenExercise1";
 import Dialog from "./ChildrenExercise3";
 import FileList from "./GithubFileListExample_Exercise1";
+import CardList from "./ListTrelloExercise4";
 
 // import ErrorBox from './ChildrenExercise1';
 // import Children from "./ChildrenExercise2";
@@ -102,6 +103,33 @@ function App() {
     },
   ];
 
+  const sampleCards = [
+    {
+      id: 1,
+      name: "Subwoofer",
+    },
+    {
+      id: 2,
+      name: "Non-porous washable",
+    },
+    {
+      id: 3,
+      name: "Wings",
+    },
+    {
+      id: 4,
+      name: "Bevelez Bezel",
+    },
+    {
+      id: 5,
+      name: "Bezeled Bevel",
+    },
+    {
+      id: 6,
+      name: "SeedList",
+    },
+  ];
+
   return (
     <div className="App">
       <AddressLabel person={testPerson} />
@@ -129,7 +157,7 @@ function App() {
         <button className="dialogButton">Close</button>
       </Dialog>
       <FileList files={testFiles}></FileList>
-      
+      <CardList cards={sampleCards}></CardList>
     </div>
   );
 }
