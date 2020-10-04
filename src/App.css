@@ -266,3 +266,24 @@
   font-size: 16px;
   font-weight: 500;
 }
+
+/*hacker news*/
+.news-item {
+  display: grid;
+}
+
+.news-head {
+  grid-row: 1/1;
+  grid-column: 1/1;
+}
+
+.news-web {
+  grid-row: 1/1;
+  grid-column: 2/2;
+  margin-left: -545px;
+  margin-bottom: -7px;
+}
+
+.news-list__head {
+  /* background-color: ; */
+}

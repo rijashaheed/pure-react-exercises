@@ -8,6 +8,9 @@ import ErrorBox from "./ChildrenExercise1";
 import Dialog from "./ChildrenExercise3";
 import FileList from "./GithubFileListExample_Exercise1";
 import CardList from "./ListTrelloExercise4";
+import NewsList from "./ListHackerNewsExercise5";
+import { Page, House } from "./StateClassExercise1";
+import House1 from "./StateClassExercise2";
 
 // import ErrorBox from './ChildrenExercise1';
 // import Children from "./ChildrenExercise2";
@@ -78,7 +81,7 @@ function App() {
       id: 1,
       name: "src",
       type: "folder",
-      updates_at: "2020-07-11 21:24:00",
+      updated_at: "2020-07-11 21:24:00",
       latestCommit: {
         message: "Initial commit",
       },
@@ -87,7 +90,7 @@ function App() {
       id: 2,
       name: "tests",
       type: "folder",
-      updates_at: "2020-07-11 21:24:00",
+      updated_at: "2020-07-11 21:24:00",
       latestCommit: {
         message: "Initial commit",
       },
@@ -96,7 +99,7 @@ function App() {
       id: 3,
       name: "README",
       type: "file",
-      updates_at: "2020-07-11 21:24:00",
+      updated_at: "2020-07-11 21:24:00",
       latestCommit: {
         message: "Add a readme",
       },
@@ -130,6 +133,32 @@ function App() {
     },
   ];
 
+  const sampleNews = [
+    {
+      id: 1,
+      heading: "Why I'm Suing the US Government",
+      website: "bunniestudios.com",
+      description: {
+        points: 1346,
+        user: "ivank",
+        updated_at: "2020-07-11 21:24:00",
+        comments: 53,
+      },
+    },
+
+    {
+      id: 2,
+      heading: "Zenzizenic",
+      website: "wikipedia.org",
+      description: {
+        points: 1200,
+        user: "vichuco",
+        updated_at: "2020-07-11 21:24:00",
+        comments: 53,
+      },
+    },
+  ];
+
   return (
     <div className="App">
       <AddressLabel person={testPerson} />
@@ -158,6 +187,10 @@ function App() {
       </Dialog>
       <FileList files={testFiles}></FileList>
       <CardList cards={sampleCards}></CardList>
+      <NewsList news={sampleNews} />
+      <Page />
+      <House />
+      <House1 />
     </div>
   );
 }
