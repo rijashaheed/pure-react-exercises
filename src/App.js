@@ -1,4 +1,5 @@
 import React from "react";
+import img from "../src/logo.svg";
 import AddressLabel from "./PropTypesExercise1";
 import Envelope from "./PropTypesExercise2";
 import CreditCard from "./PropTypesExercise3";
@@ -11,12 +12,8 @@ import CardList from "./ListTrelloExercise4";
 import NewsList from "./ListHackerNewsExercise5";
 import { Page, House } from "./StateClassExercise1";
 import House1 from "./StateClassExercise2";
-
-// import ErrorBox from './ChildrenExercise1';
-// import Children from "./ChildrenExercise2";
-
-import img from "../src/logo.svg";
 import ChildrenArray from "./ChildrenExercise2";
+import Reddit from "./APIRequestExercise1";
 
 //GitHub example
 function App() {
@@ -191,6 +188,7 @@ function App() {
       <Page />
       <House />
       <House1 />
+      <Reddit subreddit="AskPro" />
     </div>
   );
 }
