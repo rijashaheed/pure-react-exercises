@@ -14,6 +14,7 @@ import { Page, House } from "./StateClassExercise1";
 import House1 from "./StateClassExercise2";
 import ChildrenArray from "./ChildrenExercise2";
 import Reddit from "./APIRequestExercise1";
+import Room from "./StateFunctionExercise1";
 
 //GitHub example
 function App() {
@@ -188,7 +189,8 @@ function App() {
       <Page />
       <House />
       <House1 />
-      <Reddit subreddit="AskPro" />
+      <Reddit subreddit="CSS" />
+      <Room />
     </div>
   );
 }

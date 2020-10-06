@@ -28,7 +28,7 @@ export default class Reddit extends React.Component {
     return (
       <div>
         {this.state.error ? (
-          <p>Subreddit name is wrong</p>
+          <p>Error: Subreddit name is wrong</p>
         ) : (
           <>
             <h1>{`/r/${this.props.subreddit}`}</h1>
