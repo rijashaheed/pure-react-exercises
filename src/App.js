@@ -16,6 +16,7 @@ import ChildrenArray from "./ChildrenExercise2";
 import Reddit from "./APIRequestExercise1";
 import Room from "./StateFunctionExercise1";
 import RandomList from "./StateFunctionExercise2";
+import AudioControls from "./StateFunctionExercise3";
 
 //GitHub example
 function App() {
@@ -193,6 +194,7 @@ function App() {
       <Reddit subreddit="CSS" />
       <Room />
       <RandomList />
+      <AudioControls />
     </div>
   );
 }
