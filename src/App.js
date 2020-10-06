@@ -19,6 +19,7 @@ import RandomList from "./StateFunctionExercise2";
 import AudioControls from "./StateFunctionExercise3(a)";
 import AudioControlsB from "./StateFunctionExercise3(b)";
 import InputName from "./InputControlsExercise1";
+import RefInputName from "./InputControlsExercise2";
 
 //GitHub example
 function App() {
@@ -199,6 +200,7 @@ function App() {
       <AudioControls />
       <AudioControlsB />
       <InputName />
+      <RefInputName />
     </div>
   );
 }
