@@ -16,7 +16,8 @@ import ChildrenArray from "./ChildrenExercise2";
 import Reddit from "./APIRequestExercise1";
 import Room from "./StateFunctionExercise1";
 import RandomList from "./StateFunctionExercise2";
-import AudioControls from "./StateFunctionExercise3";
+import AudioControls from "./StateFunctionExercise3(a)";
+import AudioControlsB from "./StateFunctionExercise3(b)";
 
 //GitHub example
 function App() {
@@ -195,6 +196,7 @@ function App() {
       <Room />
       <RandomList />
       <AudioControls />
+      <AudioControlsB />
     </div>
   );
 }
