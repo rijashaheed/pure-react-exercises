@@ -15,6 +15,7 @@ import House1 from "./StateClassExercise2";
 import ChildrenArray from "./ChildrenExercise2";
 import Reddit from "./APIRequestExercise1";
 import Room from "./StateFunctionExercise1";
+import RandomList from "./StateFunctionExercise2";
 
 //GitHub example
 function App() {
@@ -191,6 +192,7 @@ function App() {
       <House1 />
       <Reddit subreddit="CSS" />
       <Room />
+      <RandomList />
     </div>
   );
 }
