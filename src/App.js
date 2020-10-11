@@ -21,6 +21,9 @@ import AudioControlsB from "./StateFunctionExercise3(b)";
 import InputName from "./InputControlsExercise1";
 import RefInputName from "./InputControlsExercise2";
 import ShoppingList from "./UseReducerExercise1";
+import RoomLights from "./UseReducerExercise2";
+// import CorrectPattern from "./UseReducerExercise3";
+
 
 //GitHub example
 function App() {
@@ -203,6 +206,7 @@ function App() {
       <InputName />
       <RefInputName />
       <ShoppingList />
+      <RoomLights />
     </div>
   );
 }
